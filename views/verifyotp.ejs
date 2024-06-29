@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Verification</title>
+  <!-- Include Bootstrap CSS (you may need to adjust the path) -->
+  <link rel="stylesheet" href="/stylesheets/login.css">
+  <link rel="shortcut icon" href="/images/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+ <style>
+  #text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+#text a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#text a:hover {
+    text-decoration: underline;
+}
+ </style>
+<body>
+
+  <div class="login-box">
+    <h2>Email Verification</h2>
+        <form action="/verifyotp" method="POST">
+          <div class="user-box">
+            <input type="email" name="email" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="otp" required="">
+            <label>OTP</label>
+          </div>
+          <button><a type="submit" 
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Verify
+            </a></button>
+        </form>
+      <p id="text">Don't have an account? <a id="btn" href="/">Sign up</a></p>
+    </div>
+     <script>
+     document.getElementById('btn').addEventListener('click', function(){
+      window.location.href = 'index.ejs';
+  });
+  
+     </script>
+    <!-- Include Bootstrap JS and jQuery (you may need to adjust the paths) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  </body>
+  
+  </html>
+

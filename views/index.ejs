@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Register</title>
+  <!-- Include Bootstrap CSS (you may need to adjust the path) -->
+  <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="shortcut icon" href="/images/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  #text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+#text a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#text a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+  
+  <div class="login-box">
+    <h2>Sign Up</h2>
+    <% if (error && error.length > 0) { %>
+      <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <form action="/register" method="post">
+        <div class="user-box">
+          <input type="text" name="username" required="">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="email" required="">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required="">
+          <label>Password</label>
+        </div>
+        <button ><a type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Sign up
+        </a></button>
+      </form>
+      <p id="text">Already have an account? <a href="/login">Log in</a></p>
+    </div>
+
+<!-- Include Bootstrap JS and jQuery (you may need to adjust the paths) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

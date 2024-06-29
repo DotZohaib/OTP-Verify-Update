@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<style>
+
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    #navbar nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        height: 20px;
+    }
+    #navbar nav ul {
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        gap: 1px;
+        list-style: none;
+    }
+    #navbar nav ul li  {
+        width: 15%;
+        text-align: center;
+        padding: 10px 10px;
+        border-bottom: 2px solid #fff;
+        cursor: pointer;
+    }
+    #navbar nav ul li:hover  {
+        background-color: rgb(175, 192, 224);
+        border-radius: 6px;
+
+    }
+    #navbar nav ul li a {
+        text-decoration: none;
+        color: rgb(130, 133, 215);
+    }
+    #navbar nav ul li a:hover {
+        /* border-bottom: 2px solid #1d70dd; */
+    }
+
+    @media only screen and (max-width: 420px) {
+        #navbar{
+        padding: 7px;
+    }
+    #navbar nav {
+        padding: 7px;
+        width: 100%;
+        height: 20px;
+    }
+    #navbar nav ul {
+        padding: 7px;
+        gap: 1px;
+    }
+    #navbar nav ul li  {
+        padding: 7px 7px;
+    }
+    #navbar nav ul li:hover  {
+        border-bottom: 2px solid #3f99e8;
+    }
+    #navbar nav ul li a  {
+        font-size: 11px;
+    }
+  
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <nav>
+                <img src="https://flowbite.com/docs/images/logo.svg" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Apply</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <img src="https://flowbite.com/docs/images/logo.svg" alt="">
+            </nav>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.css"  rel="stylesheet" />
+</body>
+
+</html>
